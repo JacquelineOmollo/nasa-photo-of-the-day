@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import NasaCard from "./components/NasaCard";
@@ -11,10 +11,12 @@ function App() {
       <div className="App">
         <h1>The Sky Is The Limit</h1>
       </div>
-      <div>
+      <div className="cards">
         <NasaCard />
       </div>
-      <Footer />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
