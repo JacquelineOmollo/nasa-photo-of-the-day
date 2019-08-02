@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NasaPics from "./NasaPics";
+import { tsPropertySignature } from "@babel/types";
 
 function NasaCard() {
   const [nasaData, setData] = useState([]);
@@ -23,12 +24,13 @@ function NasaCard() {
 
   return (
     <div className="cardContainer">
-      <h2>This is for the img</h2>
+      <h4>The sky is the limit</h4>
       <NasaPics
         title={nasaData.title}
         date={nasaData.date}
         copyright={nasaData.copyright}
         explanation={nasaData.explanation}
+        img={nasaData.url}
       />
     </div>
   );
