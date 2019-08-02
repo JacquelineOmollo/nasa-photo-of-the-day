@@ -10,11 +10,13 @@
   height: 18vmin;
   pointer-events: none;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .App-header {
   background-image: url("./img/earth-globe.jpg");
-  /* background-repeat: */
+  margin-left: 25vw;
+  background-repeat: no-repeat;
   min-height: 40vh;
   display: flex;
   flex-direction: column;
