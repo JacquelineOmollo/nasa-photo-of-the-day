@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  padding-bottom: 20px;
+  background-color: #3f48cc;
+  border-top: solid 2px black;
 }
 
 .App-logo {
@@ -20,10 +23,6 @@
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -31,4 +30,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cards {
+  height: 100vmin;
+}
+
+.footer {
+  background-color: #3f48cc;
+  height: 10vmin;
 }
