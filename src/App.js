@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import NasaCard from "./components/NasaCard";
 import Footer from "./components/Footer";
 import NasaPics from "./components/NasaPics";
+import "semantic-ui-css/semantic.min.css";
 
 function App() {
   return (

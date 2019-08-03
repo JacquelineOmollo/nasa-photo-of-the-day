@@ -2,25 +2,25 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NasaPics from "./NasaPics";
 
-function NasaCard() {
-  const [nasaData, setData] = useState("");
+const NasaCard = () => {
+  const [nasaData, setData] = useState([]);
 
   useEffect(() => {
-    axios.get(
-      "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
+    setData([]);
+    axios
+      .get(
+        "https://api.nasa.gov/planetary/apod?api_key=KVfXAM2KC4YeoLSgi7nXZLNW1e7bWAwgTduk4ocK"
+      )
 
-        .then(response => {
-          console.log(response.data);
-          setData(response.data);
-          // console.log(response);
-        })
+      .then(response => {
+        console.log(response.data);
+        setData(response.data);
+      })
 
-        .catch(err => console.log(err))
-    );
+      .catch(err => console.log(err, "Errors where found"));
+  }, []);
 
-    console.log(nasaData);
-  }, [nasaData]);
-
+  console.log("nasaData");
   return (
     <div className="cardContainer">
       <NasaPics
@@ -32,6 +32,6 @@ function NasaCard() {
       />
     </div>
   );
-}
+};
 
 export default NasaCard;
