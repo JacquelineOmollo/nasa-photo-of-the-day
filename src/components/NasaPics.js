@@ -2,7 +2,7 @@ import React from "react";
 
 const NasaPics = props => {
   return (
-    <div>
+    <div className="content">
       <h1>{props.title}</h1>
       <p>{props.date}</p>
       <p>{props.copyright}</p>

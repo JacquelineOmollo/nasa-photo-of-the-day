@@ -1,27 +1,22 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
+import Headers from "./components/Headers";
 import NasaCard from "./components/NasaCard";
-import Footer from "./components/Footer";
 import NasaPics from "./components/NasaPics";
-import "semantic-ui-css/semantic.min.css";
+import { Container } from "semantic-ui-react";
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <div className="App">
-        <h1>The Sky Is The Limit</h1>
-        <h2>this isn't working</h2>
+    <Container className="app" fluid>
+      <div>
+        <Headers />
+
+        <div>
+          <NasaCard />
+          <NasaPics />
+        </div>
       </div>
-      <div className="cards">
-        <NasaCard />
-        <NasaPics />
-      </div>
-      <div className="footer">
-        <Footer />
-      </div>
-    </div>
+    </Container>
   );
 }
 
