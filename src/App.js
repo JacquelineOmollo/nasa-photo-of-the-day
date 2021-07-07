@@ -1,14 +1,22 @@
 import React from "react";
 import "./App.css";
+import Headers from "./components/Headers";
+import NasaCard from "./components/NasaCard";
+import NasaPics from "./components/NasaPics";
+import { Container } from "semantic-ui-react";
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
+    <Container className="app" fluid>
+      <div>
+        <Headers />
+
+        <div>
+          <NasaCard />
+          <NasaPics />
+        </div>
+      </div>
+    </Container>
   );
 }
 
